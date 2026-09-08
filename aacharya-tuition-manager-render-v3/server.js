@@ -389,6 +389,11 @@ app.get('/api/health', (req, res) => res.json({
   persistentDiskExpected: DATA_DIR === '/var/data'
 }));
 
+// Parent Portal Extension bridge. This adds isolated integration routes only.
+const parentPortalBridge = require('./integration/parent-portal-bridge')({
+  app, db, rebuildWorkbook, adminName: ADMIN_NAME, audit
+});
+
 app.post('/api/auth/login', (req, res) => {
   if (!loginAllowed(req.ip)) return res.status(429).json({ ok: false, message: 'Too many login attempts. Try later.' });
   const email = clean(req.body.email, 200).toLowerCase();
@@ -534,7 +539,7 @@ app.delete('/api/tests/:id',authRequired,(req,res)=>{const id=Number(req.params.
 app.get('/api/intake',authRequired,(req,res)=>res.json({ok:true,submissions:rows('SELECT * FROM intake_submissions ORDER BY submitted_at DESC')}));
 app.post('/api/intake/:id/accept',authRequired,(req,res)=>{
   const x=one('SELECT * FROM intake_submissions WHERE id=?',req.params.id);if(!x)return res.status(404).json({ok:false,message:'Submission not found.'});if(x.status==='Accepted'&&x.accepted_student_id)return res.json({ok:true,student:one('SELECT * FROM students WHERE id=?',x.accepted_student_id)});
-  const t=nowIso();const info=db.prepare(`INSERT INTO students(full_name,dob,gender,school,board,grade,joining_date,phone,email,address,parent_name,parent_phone,parent_email,subjects,fee_plan_amount,status,notes,intake_submission_id,created_at,updated_at) VALUES(?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?)`).run(x.student_name,x.dob,x.gender,x.school,x.board,x.grade,t.slice(0,10),x.student_phone,x.student_email,x.address,x.parent_name,x.parent_phone,x.parent_email,x.subjects,0,'Active',x.notes,x.id,t,t);const sid=Number(info.lastInsertRowid);db.prepare('UPDATE students SET student_code=? WHERE id=?').run(studentCode(sid),sid);db.prepare(`UPDATE intake_submissions SET status='Accepted',accepted_student_id=? WHERE id=?`).run(sid,x.id);audit('ACCEPT','intake_submission',x.id,{studentId:sid},ADMIN_NAME);afterMutation();res.json({ok:true,student:one('SELECT * FROM students WHERE id=?',sid)});
+  const t=nowIso();const info=db.prepare(`INSERT INTO students(full_name,dob,gender,school,board,grade,joining_date,phone,email,address,parent_name,parent_phone,parent_email,subjects,fee_plan_amount,status,notes,intake_submission_id,created_at,updated_at) VALUES(?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?)`).run(x.student_name,x.dob,x.gender,x.school,x.board,x.grade,t.slice(0,10),x.student_phone,x.student_email,x.address,x.parent_name,x.parent_phone,x.parent_email,x.subjects,0,'Active',x.notes,x.id,t,t);const sid=Number(info.lastInsertRowid);db.prepare('UPDATE students SET student_code=? WHERE id=?').run(studentCode(sid),sid);db.prepare(`UPDATE intake_submissions SET status='Accepted',accepted_student_id=? WHERE id=?`).run(sid,x.id);audit('ACCEPT','intake_submission',x.id,{studentId:sid},ADMIN_NAME);afterMutation();const student=one('SELECT * FROM students WHERE id=?',sid);parentPortalBridge.notifyAdmissionAccepted(student).catch(err=>console.error('Parent portal hook failed:',err));res.json({ok:true,student});
 });
 app.post('/api/intake/:id/reject',authRequired,(req,res)=>{if(!one('SELECT id FROM intake_submissions WHERE id=?',req.params.id))return res.status(404).json({ok:false,message:'Submission not found.'});db.prepare(`UPDATE intake_submissions SET status='Rejected' WHERE id=?`).run(req.params.id);audit('REJECT','intake_submission',req.params.id,{},ADMIN_NAME);afterMutation();res.json({ok:true});});
 
