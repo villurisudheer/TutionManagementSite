@@ -1,0 +1,16 @@
+{
+  "name": "aacharya-tuition-manager-render",
+  "version": "4.0.0",
+  "private": true,
+  "description": "Aacharya Tuition Manager v4 with comprehensive 27-sheet styled Excel master workbook and integrated Parent Portal bridge",
+  "main": "server.js",
+  "type": "commonjs",
+  "engines": {
+    "node": ">=24 <25"
+  },
+  "scripts": {
+    "start": "node server.js",
+    "test": "node scripts/smoke.js"
+  },
+  "dependencies": {}
+}

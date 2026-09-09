@@ -1,0 +1,15 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Aacharya Learning Academy - Student Information</title><link rel="stylesheet" href="/styles.css"></head><body>
+<div class="intake-shell"><div class="intake-card"><h1>AACHARYA LEARNING ACADEMY</h1><p class="muted">Student / Parent Information Form</p><p class="muted">Please provide only information needed for tuition planning and communication. Do not enter passwords, banking details, or government ID numbers.</p>
+<form id="intakeForm"><div class="form-grid">
+<label><span>Student Name *</span><input name="studentName" required maxlength="120"></label><label><span>Class / Grade *</span><input name="grade" required maxlength="80"></label>
+<label><span>Date of Birth</span><input name="dob" type="date"></label><label><span>Gender</span><select name="gender"><option value="">Prefer not to say</option><option>Male</option><option>Female</option><option>Other</option></select></label>
+<label><span>School / College</span><input name="school" maxlength="150"></label><label><span>Board</span><input name="board" maxlength="80" placeholder="CBSE / ICSE / State / Other"></label>
+<label><span>Student Phone</span><input name="studentPhone" maxlength="40"></label><label><span>Student Email</span><input name="studentEmail" type="email" maxlength="180"></label>
+<label><span>Parent / Guardian Name *</span><input name="parentName" required maxlength="120"></label><label><span>Parent / Guardian Phone *</span><input name="parentPhone" required maxlength="40"></label>
+<label class="wide"><span>Parent / Guardian Email</span><input name="parentEmail" type="email" maxlength="180"></label>
+<div class="wide"><span style="display:block;font-size:13px;font-weight:700;margin-bottom:8px">Subjects Required *</span><div class="subject-grid"><label class="check"><input type="checkbox" name="subjects" value="Chemistry">Chemistry</label><label class="check"><input type="checkbox" name="subjects" value="Physics">Physics</label><label class="check"><input type="checkbox" name="subjects" value="Mathematics">Mathematics</label><label class="check"><input type="checkbox" name="subjects" value="Biology">Biology</label><label class="check"><input type="checkbox" name="subjects" value="English">English</label></div></div>
+<label><span>Preferred Class Mode</span><select name="preferredMode"><option>Either</option><option>Online</option><option>Offline</option></select></label><label><span>Address (optional)</span><input name="address" maxlength="500"></label>
+<label class="wide"><span>Notes / Learning Requirements</span><textarea name="notes" maxlength="1200"></textarea></label>
+<input name="website" tabindex="-1" autocomplete="off" style="position:absolute;left:-9999px" aria-hidden="true">
+</div><div class="error" id="formError"></div><button class="btn primary" id="submitBtn" type="submit" style="width:100%;margin-top:16px">Submit Information</button><div class="success-box" id="successBox"></div></form>
+</div></div><script src="/apply.js"></script></body></html>
