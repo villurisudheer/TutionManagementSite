@@ -1,0 +1,16 @@
+{
+  "name": "aacharya-tuition-manager-render",
+  "version": "5.3.0",
+  "private": true,
+  "description": "Aacharya Tuition Manager v5.3 with repaired standards-compliant Excel/Google Sheets export, Academy Pop themes, adaptive layouts and comprehensive academy reporting",
+  "main": "server.js",
+  "type": "commonjs",
+  "engines": {
+    "node": ">=24 <25"
+  },
+  "scripts": {
+    "start": "node server.js",
+    "test": "node scripts/smoke.js"
+  },
+  "dependencies": {}
+}
