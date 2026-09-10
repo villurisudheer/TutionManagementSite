@@ -1,0 +1,17 @@
+{
+  "name": "Aacharya Tuition Manager",
+  "short_name": "Aacharya",
+  "start_url": "/admin",
+  "scope": "/",
+  "display": "standalone",
+  "background_color": "#060a13",
+  "theme_color": "#060a13",
+  "icons": [
+    {
+      "src": "/aacharya-app-icon.png",
+      "sizes": "1024x1024",
+      "type": "image/png",
+      "purpose": "any"
+    }
+  ]
+}

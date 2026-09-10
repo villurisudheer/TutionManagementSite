@@ -1,0 +1,17 @@
+{
+  "name": "Aacharya Parent Portal",
+  "short_name": "Aacharya Parent",
+  "start_url": "/parent",
+  "scope": "/",
+  "display": "standalone",
+  "background_color": "#07101f",
+  "theme_color": "#07101f",
+  "icons": [
+    {
+      "src": "/aacharya-app-icon.png",
+      "sizes": "1024x1024",
+      "type": "image/png",
+      "purpose": "any"
+    }
+  ]
+}
