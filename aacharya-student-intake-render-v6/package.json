@@ -1,0 +1,16 @@
+{
+  "name": "aacharya-student-intake-render-v6",
+  "version": "6.0.0",
+  "private": true,
+  "description": "Aacharya Tuition Manager V6: V5.3-compatible tuition manager with integrated parent portal, compulsory payment proof, enrollment/alumni lifecycle, payment version history and 36-sheet reliable Excel export",
+  "main": "server.js",
+  "type": "commonjs",
+  "engines": {
+    "node": ">=24 <25"
+  },
+  "scripts": {
+    "start": "node server.js",
+    "test": "node scripts/smoke-v6.js"
+  },
+  "dependencies": {}
+}
