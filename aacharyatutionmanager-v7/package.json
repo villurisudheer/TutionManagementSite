@@ -1,0 +1,18 @@
+{
+  "name": "aacharya-student-intake-render-v7",
+  "version": "7.0.0",
+  "private": true,
+  "description": "Aacharya Tuition Manager V7: additive V6.1 upgrade with four integrated roles, safe SQLite migrations, private payment proofs, history and 44-sheet XLSX reports",
+  "main": "server.js",
+  "type": "commonjs",
+  "engines": {
+    "node": ">=24 <25"
+  },
+  "scripts": {
+    "start": "node --env-file-if-exists=.env server.js",
+    "test": "node scripts/check-source-v7.js && node scripts/test-v7.js",
+    "test:browser": "node scripts/test-browser-v7.js",
+    "test:workbook": "python3 scripts/validate-workbook-v7.py"
+  },
+  "dependencies": {}
+}

@@ -1,0 +1,390 @@
+{
+  "students": [
+    {
+      "id": 1,
+      "student_code": "ALA-0001",
+      "full_name": "QA Legacy Student",
+      "dob": "",
+      "gender": "",
+      "school": "QA fixture school",
+      "board": "",
+      "grade": "Class 12",
+      "stream": null,
+      "joining_date": "2026-09-13",
+      "phone": "",
+      "email": "",
+      "address": "",
+      "parent_name": "QA Legacy Parent",
+      "parent_phone": "9000000000",
+      "parent_email": "legacy-parent@example.test",
+      "subjects": "Chemistry",
+      "fee_plan_amount": 0,
+      "status": "Active",
+      "notes": "",
+      "intake_submission_id": "b00efa6b-cbff-4b98-af56-7bbf18595ac1",
+      "created_at": "2026-09-13T14:03:28.870Z",
+      "updated_at": "2026-09-13T14:03:28.870Z",
+      "archived_at": null,
+      "archive_reason": null
+    }
+  ],
+  "classes": [
+    {
+      "id": 1,
+      "student_id": 1,
+      "class_date": "2026-01-02",
+      "start_time": "18:30",
+      "end_time": "20:00",
+      "duration_hours": 1.5,
+      "subject": "Chemistry",
+      "topic": "",
+      "mode": "Online",
+      "status": "Completed",
+      "notes": "",
+      "created_by": "Aacharya Sudheer",
+      "created_at": "2026-09-13T14:03:28.895Z",
+      "updated_at": "2026-09-13T14:03:28.895Z"
+    }
+  ],
+  "attendance": [
+    {
+      "id": 1,
+      "student_id": 1,
+      "attendance_date": "2026-01-02",
+      "status": "Present",
+      "notes": "",
+      "marked_by": "Aacharya Sudheer",
+      "created_at": "2026-09-13T14:03:28.931Z",
+      "updated_at": "2026-09-13T14:03:28.931Z"
+    }
+  ],
+  "fees": [
+    {
+      "id": 1,
+      "student_id": 1,
+      "billing_type": "Monthly",
+      "amount": 5000,
+      "billing_period": "2026-01",
+      "due_date": "2026-01-10",
+      "total_hours_included": 0,
+      "status": "Pending",
+      "notes": "",
+      "created_at": "2026-09-13T14:03:28.945Z",
+      "updated_at": "2026-09-13T14:03:28.945Z"
+    }
+  ],
+  "payments": [
+    {
+      "id": 1,
+      "student_id": 1,
+      "fee_id": 1,
+      "receipt_no": "ALA-20260913-001",
+      "payer_name": "QA Legacy Parent",
+      "payer_relation": "",
+      "amount": 2500,
+      "payment_date": "2026-01-03",
+      "method": "Cash",
+      "transaction_reference": "",
+      "billing_period": "",
+      "received_by": "Aacharya Sudheer",
+      "notes": "",
+      "created_at": "2026-09-13T14:03:28.965Z"
+    }
+  ],
+  "tests": [
+    {
+      "id": 1,
+      "student_id": 1,
+      "test_name": "Legacy test",
+      "subject": "Chemistry",
+      "test_date": "2026-01-04",
+      "max_marks": 100,
+      "marks_obtained": 85,
+      "percentage": 85,
+      "grade": "A",
+      "teacher_remarks": "",
+      "created_at": "2026-09-13T14:03:29.008Z"
+    }
+  ],
+  "intake_submissions": [
+    {
+      "id": "b00efa6b-cbff-4b98-af56-7bbf18595ac1",
+      "student_name": "QA Legacy Student",
+      "dob": "",
+      "gender": "",
+      "grade": "Class 12",
+      "school": "QA fixture school",
+      "board": "",
+      "student_phone": "",
+      "student_email": "",
+      "parent_name": "QA Legacy Parent",
+      "parent_phone": "9000000000",
+      "parent_email": "legacy-parent@example.test",
+      "subjects": "Chemistry",
+      "preferred_mode": "",
+      "address": "",
+      "notes": "",
+      "status": "Accepted",
+      "submitted_at": "2026-09-13T14:03:28.842Z",
+      "accepted_student_id": 1,
+      "accepted_at": "2026-09-13T14:03:28.871Z",
+      "updated_at": "2026-09-13T14:03:28.871Z"
+    }
+  ],
+  "settings": [
+    {
+      "key": "academy_name",
+      "value": "AACHARYA LEARNING ACADEMY",
+      "updated_at": "2026-09-13T14:03:28.681Z"
+    },
+    {
+      "key": "currency",
+      "value": "INR",
+      "updated_at": "2026-09-13T14:03:28.682Z"
+    },
+    {
+      "key": "background_image_url",
+      "value": "",
+      "updated_at": "2026-09-13T14:03:28.682Z"
+    },
+    {
+      "key": "academic_year",
+      "value": "2026-27",
+      "updated_at": "2026-09-13T14:03:28.682Z"
+    }
+  ],
+  "audit_log": [
+    {
+      "id": 1,
+      "action": "LOGIN",
+      "entity_type": "auth",
+      "entity_id": "fixture@example.test",
+      "details": "{\"ip\":\"127.0.0.1\"}",
+      "actor": "Aacharya Sudheer",
+      "created_at": "2026-09-13T14:03:28.838Z"
+    },
+    {
+      "id": 2,
+      "action": "CREATE",
+      "entity_type": "intake_submission",
+      "entity_id": "b00efa6b-cbff-4b98-af56-7bbf18595ac1",
+      "details": "{\"studentName\":\"QA Legacy Student\",\"grade\":\"Class 12\",\"subjects\":\"Chemistry\"}",
+      "actor": "Public form",
+      "created_at": "2026-09-13T14:03:28.842Z"
+    },
+    {
+      "id": 3,
+      "action": "ACCEPT",
+      "entity_type": "intake_submission",
+      "entity_id": "b00efa6b-cbff-4b98-af56-7bbf18595ac1",
+      "details": "{\"studentId\":1,\"relinked\":false}",
+      "actor": "Aacharya Sudheer",
+      "created_at": "2026-09-13T14:03:28.871Z"
+    },
+    {
+      "id": 4,
+      "action": "CREATE",
+      "entity_type": "parent_invite",
+      "entity_id": "1",
+      "details": "{\"expiresAt\":\"2026-09-20T14:03:28.890Z\"}",
+      "actor": "Aacharya Sudheer",
+      "created_at": "2026-09-13T14:03:28.891Z"
+    },
+    {
+      "id": 5,
+      "action": "CREATE",
+      "entity_type": "class",
+      "entity_id": "1",
+      "details": "{\"studentId\":1,\"date\":\"2026-01-02\",\"start\":\"18:30\",\"end\":\"20:00\",\"dur\":1.5}",
+      "actor": "Aacharya Sudheer",
+      "created_at": "2026-09-13T14:03:28.895Z"
+    },
+    {
+      "id": 6,
+      "action": "UPSERT",
+      "entity_type": "attendance",
+      "entity_id": "1:2026-01-02",
+      "details": "{\"status\":\"Present\"}",
+      "actor": "Aacharya Sudheer",
+      "created_at": "2026-09-13T14:03:28.931Z"
+    },
+    {
+      "id": 7,
+      "action": "CREATE",
+      "entity_type": "fee",
+      "entity_id": "1",
+      "details": "{\"sid\":1,\"amount\":5000}",
+      "actor": "Aacharya Sudheer",
+      "created_at": "2026-09-13T14:03:28.945Z"
+    },
+    {
+      "id": 8,
+      "action": "CREATE",
+      "entity_type": "payment",
+      "entity_id": "1",
+      "details": "{\"sid\":1,\"amount\":2000,\"payer\":\"QA Legacy Parent\",\"receipt\":\"ALA-20260913-001\",\"receivedBy\":\"Aacharya Sudheer\"}",
+      "actor": "Aacharya Sudheer",
+      "created_at": "2026-09-13T14:03:28.966Z"
+    },
+    {
+      "id": 9,
+      "action": "UPDATE",
+      "entity_type": "payment",
+      "entity_id": "1",
+      "details": "{\"reason\":\"QA legacy payment correction\",\"previousVersion\":1,\"currentVersion\":2,\"editedAfterVerification\":false}",
+      "actor": "Aacharya Sudheer",
+      "created_at": "2026-09-13T14:03:28.984Z"
+    },
+    {
+      "id": 10,
+      "action": "CREATE",
+      "entity_type": "test",
+      "entity_id": "1",
+      "details": "{\"sid\":1,\"name\":\"Legacy test\",\"pct\":85}",
+      "actor": "Aacharya Sudheer",
+      "created_at": "2026-09-13T14:03:29.008Z"
+    },
+    {
+      "id": 11,
+      "action": "CREATE",
+      "entity_type": "enrollment",
+      "entity_id": "1",
+      "details": "{\"studentId\":1,\"course\":\"Legacy chemistry course\",\"start\":\"2025-01-01\",\"end\":\"2099-12-31\",\"grace\":\"2100-01-07\"}",
+      "actor": "Aacharya Sudheer",
+      "created_at": "2026-09-13T14:03:29.024Z"
+    },
+    {
+      "id": 12,
+      "action": "CREATE",
+      "entity_type": "parent_account",
+      "entity_id": "1",
+      "details": "{\"studentId\":1}",
+      "actor": "QA Legacy Parent",
+      "created_at": "2026-09-13T14:03:29.133Z"
+    },
+    {
+      "id": 13,
+      "action": "CREATE",
+      "entity_type": "parent_payment_proof",
+      "entity_id": "1",
+      "details": "{\"amount\":700,\"date\":\"2026-01-05\",\"method\":\"UPI\",\"studentId\":1}",
+      "actor": "QA Legacy Parent",
+      "created_at": "2026-09-13T14:03:29.146Z"
+    }
+  ],
+  "parent_accounts": [
+    {
+      "id": 1,
+      "full_name": "QA Legacy Parent",
+      "email": "legacy-parent@example.test",
+      "phone": "",
+      "password_hash": "scrypt$aa3409ef0e9ea76113ac4f577e0b1bad$1a114a70e262a0b6b3498a588f0754957148267271b33d1a8c8f9bb14877f4e6f38db077122ff7ed66637b775bf895b30aaa62548651cb59295cdd521feaf63b",
+      "status": "Active",
+      "disabled_at": null,
+      "purge_after": null,
+      "last_login_at": null,
+      "created_at": "2026-09-13T14:03:29.054Z",
+      "updated_at": "2026-09-13T14:03:29.054Z"
+    }
+  ],
+  "parent_student_links": [
+    {
+      "parent_id": 1,
+      "student_id": 1,
+      "relationship": "Parent / Guardian",
+      "created_at": "2026-09-13T14:03:29.054Z"
+    }
+  ],
+  "parent_invites": [
+    {
+      "id": 1,
+      "token_hash": "2e2001bf69f1ad31a20d75af3dfbf2b79b73622984de12446d6f65fa5a1734ed",
+      "student_id": 1,
+      "parent_email": "legacy-parent@example.test",
+      "parent_phone": "9000000000",
+      "expires_at": "2026-09-20T14:03:28.890Z",
+      "used_at": "2026-09-13T14:03:29.054Z",
+      "created_at": "2026-09-13T14:03:28.890Z",
+      "created_by": "Aacharya Sudheer"
+    }
+  ],
+  "enrollments": [
+    {
+      "id": 1,
+      "student_id": 1,
+      "course_name": "Legacy chemistry course",
+      "subjects": "Chemistry",
+      "start_date": "2025-01-01",
+      "end_date": "2099-12-31",
+      "grace_until": "2100-01-07",
+      "status": "Active",
+      "notes": "",
+      "created_at": "2026-09-13T14:03:29.024Z",
+      "updated_at": "2026-09-13T14:03:29.024Z"
+    }
+  ],
+  "renewal_requests": [],
+  "parent_notifications": [],
+  "parent_payment_proofs": [
+    {
+      "id": 1,
+      "parent_id": 1,
+      "student_id": 1,
+      "amount": 700,
+      "payment_date": "2026-01-05",
+      "method": "UPI",
+      "payer_name": "QA Legacy Parent",
+      "payer_relation": "",
+      "transaction_reference": "QA-LEGACY-PROOF",
+      "billing_period": "",
+      "notes": "",
+      "proof_filename": "PARENT_1789308209146_6a4962a0b14d.png",
+      "proof_mime": "image/png",
+      "proof_sha256": "431ced6916a2a21a156e38701afe55bbd7f88969fbbfc56d7fe099d47f265460",
+      "proof_version": 1,
+      "status": "Pending",
+      "admin_note": null,
+      "official_payment_id": null,
+      "official_receipt_no": null,
+      "created_at": "2026-09-13T14:03:29.146Z",
+      "updated_at": "2026-09-13T14:03:29.146Z"
+    }
+  ],
+  "payment_proof_file_history": [],
+  "payment_current_meta": [
+    {
+      "payment_id": 1,
+      "current_version": 2,
+      "source": "Admin Entry",
+      "parent_proof_id": null,
+      "edited_after_verification": 0,
+      "updated_at": "2026-09-13T14:03:28.984Z"
+    }
+  ],
+  "payment_history": [
+    {
+      "id": 1,
+      "payment_id": 1,
+      "version": 1,
+      "student_id": 1,
+      "fee_id": 1,
+      "receipt_no": "ALA-20260913-001",
+      "payer_name": "QA Legacy Parent",
+      "payer_relation": "",
+      "amount": 2000,
+      "payment_date": "2026-01-03",
+      "method": "Cash",
+      "transaction_reference": "",
+      "billing_period": "",
+      "received_by": "Aacharya Sudheer",
+      "notes": "",
+      "source": "Admin Entry",
+      "parent_proof_id": null,
+      "change_reason": "QA legacy payment correction",
+      "edited_by": "Aacharya Sudheer",
+      "archived_at": "2026-09-13T14:03:28.984Z",
+      "replacement_version": 2,
+      "history_status": "Superseded"
+    }
+  ]
+}

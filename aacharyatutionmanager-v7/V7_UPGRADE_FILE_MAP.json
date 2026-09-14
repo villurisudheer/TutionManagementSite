@@ -1,0 +1,419 @@
+{
+  "source_zip_sha256": "18ec8880041dbdfd322323d898590b2c601b188bf0db72ea7416e73208fd6769",
+  "original_files": [
+    {
+      "path": "CHANGELOG.md",
+      "baseline_sha256": "6b5b43b2b3974e47268c74868f6f199df78db9768a68610534c063298610eda1",
+      "v7_sha256": "3e8a36b26c123ebfbcddb5dd5bfed8ecd88f7727869343013803e14c74466373",
+      "status": "extended_or_fixed"
+    },
+    {
+      "path": "EXCEL_COMPATIBILITY.md",
+      "baseline_sha256": "069ab1d78669c32b136eba1358945676e9e5bb12711842e7ee013d5bb8cd565d",
+      "v7_sha256": "069ab1d78669c32b136eba1358945676e9e5bb12711842e7ee013d5bb8cd565d",
+      "status": "unchanged"
+    },
+    {
+      "path": "integration/integrated-parent-portal.js",
+      "baseline_sha256": "5d0ebd92320de7552d2095461649084d767eec532189c61768d8a5891d326a74",
+      "v7_sha256": "fef5c22a059657a690d1fe1312aa16cf00b00e000120bb4c713e3149528951de",
+      "status": "extended_or_fixed"
+    },
+    {
+      "path": "integration/parent-portal-bridge.js",
+      "baseline_sha256": "75a9ab07b015d0f2aff836620e52d4d721f84011c3731b431b75d1c15a17da47",
+      "v7_sha256": "75a9ab07b015d0f2aff836620e52d4d721f84011c3731b431b75d1c15a17da47",
+      "status": "unchanged"
+    },
+    {
+      "path": "lib/mini-express.js",
+      "baseline_sha256": "ecfa35b61aa6ce04772de0af3f78a145eb90d0c5012525fe4221a1ab3146463d",
+      "v7_sha256": "547bd24f1378f16c1140732466b59ce49e1ee1abbf0fc84c908455e41d529c1c",
+      "status": "extended_or_fixed"
+    },
+    {
+      "path": "lib/xlsx-safe.js",
+      "baseline_sha256": "be3deaf75f8b16213c793edcd5c997c1f0a7732598405757b3d24d28202f7d8c",
+      "v7_sha256": "be3deaf75f8b16213c793edcd5c997c1f0a7732598405757b3d24d28202f7d8c",
+      "status": "unchanged"
+    },
+    {
+      "path": "package-lock.json",
+      "baseline_sha256": "0aeee07e0d46043d70a1bb610b5773bcfc306c2cddd2f8ee9144869be903a162",
+      "v7_sha256": "c1df9f9fa7d65c9569a46880eccdf16fae0a76916e908623ca4eeed3f3359eef",
+      "status": "extended_or_fixed"
+    },
+    {
+      "path": "package.json",
+      "baseline_sha256": "aac00cd458e7e9a2d67e51a06e8a33fdc735ff329f50897ab0e55ee5eabb1c32",
+      "v7_sha256": "26fda7a3c583f4955ad874567268005e2814f0aad4b89bdfc437b2ce8a296aa7",
+      "status": "extended_or_fixed"
+    },
+    {
+      "path": "parent-portal-extension/CHANGELOG.md",
+      "baseline_sha256": "d243d114b0932813b55a8de3ab7820d52d3621291d4a85f2840df20b46f8a43d",
+      "v7_sha256": "d243d114b0932813b55a8de3ab7820d52d3621291d4a85f2840df20b46f8a43d",
+      "status": "unchanged"
+    },
+    {
+      "path": "parent-portal-extension/integration/main-v3/MAIN_V3_INTEGRATION.md",
+      "baseline_sha256": "0b815aeed31315e84fe69021e9f5cde8f95d7546b49a44d4213124f9e38a0567",
+      "v7_sha256": "0b815aeed31315e84fe69021e9f5cde8f95d7546b49a44d4213124f9e38a0567",
+      "status": "unchanged"
+    },
+    {
+      "path": "parent-portal-extension/integration/main-v3/parent-portal-bridge.js",
+      "baseline_sha256": "75a9ab07b015d0f2aff836620e52d4d721f84011c3731b431b75d1c15a17da47",
+      "v7_sha256": "75a9ab07b015d0f2aff836620e52d4d721f84011c3731b431b75d1c15a17da47",
+      "status": "unchanged"
+    },
+    {
+      "path": "parent-portal-extension/lib/mini-express.js",
+      "baseline_sha256": "ecfa35b61aa6ce04772de0af3f78a145eb90d0c5012525fe4221a1ab3146463d",
+      "v7_sha256": "ecfa35b61aa6ce04772de0af3f78a145eb90d0c5012525fe4221a1ab3146463d",
+      "status": "unchanged"
+    },
+    {
+      "path": "parent-portal-extension/package-lock.json",
+      "baseline_sha256": "749cdac3293cb31b00aee9944d785d0edac06c570735fcb1e02d6c5b869fb090",
+      "v7_sha256": "749cdac3293cb31b00aee9944d785d0edac06c570735fcb1e02d6c5b869fb090",
+      "status": "unchanged"
+    },
+    {
+      "path": "parent-portal-extension/package.json",
+      "baseline_sha256": "9dfff7995de56906a82ce51e0188c9ccf59cae57fd5d9e81007636d47fb55a1b",
+      "v7_sha256": "9dfff7995de56906a82ce51e0188c9ccf59cae57fd5d9e81007636d47fb55a1b",
+      "status": "unchanged"
+    },
+    {
+      "path": "parent-portal-extension/public/aacharya-app-icon.png",
+      "baseline_sha256": "849148853e6a51bc786b92360cb6e539f7260cc3a98d6506550c07c722aeea52",
+      "v7_sha256": "849148853e6a51bc786b92360cb6e539f7260cc3a98d6506550c07c722aeea52",
+      "status": "unchanged"
+    },
+    {
+      "path": "parent-portal-extension/public/extension-admin.html",
+      "baseline_sha256": "eef6087cf2de7316af5a678605769457d4734100dba029c0001a7a7e060c0fd7",
+      "v7_sha256": "eef6087cf2de7316af5a678605769457d4734100dba029c0001a7a7e060c0fd7",
+      "status": "unchanged"
+    },
+    {
+      "path": "parent-portal-extension/public/extension-admin.js",
+      "baseline_sha256": "c1d2375ba57072981e55e837fb0467593faae8a8a389f1d735e814ffc623e618",
+      "v7_sha256": "c1d2375ba57072981e55e837fb0467593faae8a8a389f1d735e814ffc623e618",
+      "status": "unchanged"
+    },
+    {
+      "path": "parent-portal-extension/public/manifest.json",
+      "baseline_sha256": "6edfb7b446f966673cd3a0f943eedb040076e9baa7a970040800f148a7c8a368",
+      "v7_sha256": "6edfb7b446f966673cd3a0f943eedb040076e9baa7a970040800f148a7c8a368",
+      "status": "unchanged"
+    },
+    {
+      "path": "parent-portal-extension/public/parent.html",
+      "baseline_sha256": "07a197bdefaad924e74d66683c73e83dbb4303639340d4131aede1a2450675f5",
+      "v7_sha256": "07a197bdefaad924e74d66683c73e83dbb4303639340d4131aede1a2450675f5",
+      "status": "unchanged"
+    },
+    {
+      "path": "parent-portal-extension/public/parent.js",
+      "baseline_sha256": "4dca96c6301c7e6bfb65c88dce2ccd9d6e9d43e3474ac8f3b0c0851e49734993",
+      "v7_sha256": "4dca96c6301c7e6bfb65c88dce2ccd9d6e9d43e3474ac8f3b0c0851e49734993",
+      "status": "unchanged"
+    },
+    {
+      "path": "parent-portal-extension/public/signup.html",
+      "baseline_sha256": "b3d36b07b28b22ced95062952b52e7aeef5ff7e24a6ead4ee671cc76f5d6292d",
+      "v7_sha256": "b3d36b07b28b22ced95062952b52e7aeef5ff7e24a6ead4ee671cc76f5d6292d",
+      "status": "unchanged"
+    },
+    {
+      "path": "parent-portal-extension/public/signup.js",
+      "baseline_sha256": "4149d4ebfe5ad2f86675abea4427009260caeeddbd47541baabb4648dfde5639",
+      "v7_sha256": "4149d4ebfe5ad2f86675abea4427009260caeeddbd47541baabb4648dfde5639",
+      "status": "unchanged"
+    },
+    {
+      "path": "parent-portal-extension/public/styles.css",
+      "baseline_sha256": "edd8c2ec93a4aa6f93f6e2865d093f7a806af5ef8999925b13e2e535fbe236f6",
+      "v7_sha256": "edd8c2ec93a4aa6f93f6e2865d093f7a806af5ef8999925b13e2e535fbe236f6",
+      "status": "unchanged"
+    },
+    {
+      "path": "parent-portal-extension/QA.md",
+      "baseline_sha256": "154d13f2097511f917c633c36717af35685b732a1a6b7059445842fe8ff20493",
+      "v7_sha256": "154d13f2097511f917c633c36717af35685b732a1a6b7059445842fe8ff20493",
+      "status": "unchanged"
+    },
+    {
+      "path": "parent-portal-extension/README.md",
+      "baseline_sha256": "341f3f773c27eb0cfd7fa31c892d1a8793f3771ef41d8de343075ff580ecd283",
+      "v7_sha256": "341f3f773c27eb0cfd7fa31c892d1a8793f3771ef41d8de343075ff580ecd283",
+      "status": "unchanged"
+    },
+    {
+      "path": "parent-portal-extension/render-extension-only.yaml",
+      "baseline_sha256": "c2aee1f1d68d911f016de350264d5ad140181a05771d9b7c85f7cb25c47fa352",
+      "v7_sha256": "c2aee1f1d68d911f016de350264d5ad140181a05771d9b7c85f7cb25c47fa352",
+      "status": "unchanged"
+    },
+    {
+      "path": "parent-portal-extension/RENDER_SETUP.md",
+      "baseline_sha256": "1815fed7c932316f64bf08023f55d758b7ef1f533fc9114378696ce84f98a9f5",
+      "v7_sha256": "1815fed7c932316f64bf08023f55d758b7ef1f533fc9114378696ce84f98a9f5",
+      "status": "unchanged"
+    },
+    {
+      "path": "parent-portal-extension/scripts/smoke.js",
+      "baseline_sha256": "2dd5cf0e3301707a89a9f029a993a3ce4c57ae9c5c895775ee1b5c658263963b",
+      "v7_sha256": "2dd5cf0e3301707a89a9f029a993a3ce4c57ae9c5c895775ee1b5c658263963b",
+      "status": "unchanged"
+    },
+    {
+      "path": "parent-portal-extension/server.js",
+      "baseline_sha256": "4143cf37771ae4152eb987a3d1c2f1a31970c1994464f492f06219582c5603fa",
+      "v7_sha256": "4143cf37771ae4152eb987a3d1c2f1a31970c1994464f492f06219582c5603fa",
+      "status": "unchanged"
+    },
+    {
+      "path": "public/aacharya-app-icon.png",
+      "baseline_sha256": "849148853e6a51bc786b92360cb6e539f7260cc3a98d6506550c07c722aeea52",
+      "v7_sha256": "849148853e6a51bc786b92360cb6e539f7260cc3a98d6506550c07c722aeea52",
+      "status": "unchanged"
+    },
+    {
+      "path": "public/admin.html",
+      "baseline_sha256": "ec2b91ff0ade74c45b30ce08367ef6efc8347f9f8d49f8c221aff44a25a90979",
+      "v7_sha256": "538e9333e2fa71cc7b03f39a8df77f2f96673cb934cd076b177852a64b3575d0",
+      "status": "extended_or_fixed"
+    },
+    {
+      "path": "public/admin.js",
+      "baseline_sha256": "66683c88c0d799f6324e7909df3f0eeaeae8b0d7304d715ad46888c6b7d55f69",
+      "v7_sha256": "b934b0f44ad419a62c5acf4e2caa256a1addf6e2e8b97ab59a6df3b97db258e0",
+      "status": "extended_or_fixed"
+    },
+    {
+      "path": "public/apply.html",
+      "baseline_sha256": "aa521ea230ad8675c98a1f6662dcfac88f046cf4998df188f8f01dc0bda323b9",
+      "v7_sha256": "aa4ce837bb2084fbce93b3063a8d7a86aaa0c8419e85a37d8ddd4c105dc3457b",
+      "status": "extended_or_fixed"
+    },
+    {
+      "path": "public/apply.js",
+      "baseline_sha256": "081eff9292219b0763691d9bc101136c8f026e8f7921c4038d70b6cb1ee4934f",
+      "v7_sha256": "aaf1c5b03f9595696981bb9506b9b422a129692133814387079d7514b06c6ace",
+      "status": "extended_or_fixed"
+    },
+    {
+      "path": "public/favicon.svg",
+      "baseline_sha256": "91b99fc0b10d4617b99e7e1bba4b7c4451dcdcb6989c5c9a448041a96150e0bd",
+      "v7_sha256": "91b99fc0b10d4617b99e7e1bba4b7c4451dcdcb6989c5c9a448041a96150e0bd",
+      "status": "unchanged"
+    },
+    {
+      "path": "public/manifest.json",
+      "baseline_sha256": "6779998b9db3ebc4caa60931db26d36f8572519f52d20ddeee5ffbadd8631f95",
+      "v7_sha256": "92f7f6e23d51190fd8685f9ce109261a92eba2ddd1f55e9fd114d9b512b4f3db",
+      "status": "extended_or_fixed"
+    },
+    {
+      "path": "public/parent-portal.css",
+      "baseline_sha256": "f6d41abedc5d480907b41da5dc9aeea9cbb52f14059d414bd4d7003f647a7d2b",
+      "v7_sha256": "f6d41abedc5d480907b41da5dc9aeea9cbb52f14059d414bd4d7003f647a7d2b",
+      "status": "unchanged"
+    },
+    {
+      "path": "public/parent-signup.html",
+      "baseline_sha256": "7a359a3cec1d761573e4841065fb00d857ba6db69d588acaf391fc4f45e502b1",
+      "v7_sha256": "de8e578778f88402bdb625bcdc5d80a9763d2db43109052e15b93560455b9281",
+      "status": "extended_or_fixed"
+    },
+    {
+      "path": "public/parent-signup.js",
+      "baseline_sha256": "f7c46b82ef6ffa7df197ee270e922f023191b9545e865c5135fa5ab5b75dea9b",
+      "v7_sha256": "5e7db9aca3d23819ed9732b248a46a62fd01c878ba02e9674c2129cdead9ddea",
+      "status": "extended_or_fixed"
+    },
+    {
+      "path": "public/parent.html",
+      "baseline_sha256": "5fb0641231be5c6cde95086cf51662dbb241ca8cff2642f4fafd47b50b7f8199",
+      "v7_sha256": "235a9ac8df94118fc32c5d9c24160e76ec3b30f7b21e4b145ea4cb9ba80c5b47",
+      "status": "extended_or_fixed"
+    },
+    {
+      "path": "public/parent.js",
+      "baseline_sha256": "b85fab8e86ec3a6a1182041285fe108233ed12c57c39eeb2c0fca39c317a8a96",
+      "v7_sha256": "5f58cd15baeb72cbd6c4d320f6d1940a4378127e42d37cd99c8d36c598d10fd7",
+      "status": "extended_or_fixed"
+    },
+    {
+      "path": "public/styles.css",
+      "baseline_sha256": "729e3faf2e3b41f0c9822d44484f77066e55129afa3180891fdde89fbb37afce",
+      "v7_sha256": "9cd73e2596992290715d944db623e8333d5cd87bde866df8180dcd0b2dc94d55",
+      "status": "extended_or_fixed"
+    },
+    {
+      "path": "QA_INTEGRATED.md",
+      "baseline_sha256": "dec16884bceeeaa5aeb3f9d4af8340ce3ae3322a0ee341fc7cc07ecb5f592ab6",
+      "v7_sha256": "dec16884bceeeaa5aeb3f9d4af8340ce3ae3322a0ee341fc7cc07ecb5f592ab6",
+      "status": "unchanged"
+    },
+    {
+      "path": "QA_V4.md",
+      "baseline_sha256": "66656189fa66d81482f265c64ae2d62bfcf7db144da7ea7cbf051cfcda557026",
+      "v7_sha256": "66656189fa66d81482f265c64ae2d62bfcf7db144da7ea7cbf051cfcda557026",
+      "status": "unchanged"
+    },
+    {
+      "path": "QA_V5.md",
+      "baseline_sha256": "0c1fff6d7badc4e2ba3d24fdd431d5ae2e8f738e893b0353ee57107a4f2c5af3",
+      "v7_sha256": "0c1fff6d7badc4e2ba3d24fdd431d5ae2e8f738e893b0353ee57107a4f2c5af3",
+      "status": "unchanged"
+    },
+    {
+      "path": "QA_V5_2.md",
+      "baseline_sha256": "c30fa9d827434a1736bed7a66d8481998bde0a8d7da41e2d7bfa7828367de63b",
+      "v7_sha256": "c30fa9d827434a1736bed7a66d8481998bde0a8d7da41e2d7bfa7828367de63b",
+      "status": "unchanged"
+    },
+    {
+      "path": "QA_V5_3.md",
+      "baseline_sha256": "2ada058e26443ea967588f49780b18336adc622b0f6f29b37542acd3c59a6527",
+      "v7_sha256": "2ada058e26443ea967588f49780b18336adc622b0f6f29b37542acd3c59a6527",
+      "status": "unchanged"
+    },
+    {
+      "path": "QA_V6.md",
+      "baseline_sha256": "8c1e968410c4c85c3a31c2bdd5c2f55757d59a4b5a2090888a6f9daaff707b47",
+      "v7_sha256": "8c1e968410c4c85c3a31c2bdd5c2f55757d59a4b5a2090888a6f9daaff707b47",
+      "status": "unchanged"
+    },
+    {
+      "path": "QA_V6_1.md",
+      "baseline_sha256": "f52ba95c02db6fed0a8a27427993f2059afc3f81f3976f20b4cbda8846963989",
+      "v7_sha256": "f52ba95c02db6fed0a8a27427993f2059afc3f81f3976f20b4cbda8846963989",
+      "status": "unchanged"
+    },
+    {
+      "path": "README.md",
+      "baseline_sha256": "0261c3a3a8a5a3157cb943d7376557baea43acedace5b6c242e33c26e3017bc5",
+      "v7_sha256": "f90a7b811c856f2ef555d5596be4f9d9b9e69a8d3d9e59e053e575d084cb6ea4",
+      "status": "extended_or_fixed"
+    },
+    {
+      "path": "render.yaml",
+      "baseline_sha256": "8609c1da1f24d71804da5274a9239870dc56e6c13681a6232227fab7702b7b9b",
+      "v7_sha256": "a9aba028a5190f6c35bc82bc6e3c335f758663fc495f935916f9293b55ac8579",
+      "status": "extended_or_fixed"
+    },
+    {
+      "path": "RENDER_SETUP.md",
+      "baseline_sha256": "35efdabd8fb741b6b9871bba198de5275503098685a7a649f2b9175685bf8c9d",
+      "v7_sha256": "f672585ec2d948e3fc842a98d89d687b1e8cdaa40eabade639587976726e08be",
+      "status": "extended_or_fixed"
+    },
+    {
+      "path": "RENDER_SETUP_MAIN_ONLY.md",
+      "baseline_sha256": "be6bf8a6229aec2d046594b5c4b873c868ed6e7be014bf192eeb76f6c19a48c6",
+      "v7_sha256": "be6bf8a6229aec2d046594b5c4b873c868ed6e7be014bf192eeb76f6c19a48c6",
+      "status": "unchanged"
+    },
+    {
+      "path": "sample/Aacharya_Tuition_Master_v5_3_FAKE_DATA_COMPATIBILITY_SAMPLE.xlsx",
+      "baseline_sha256": "fbfa208e093f628e2ea30340aff8134b0933804d9bb72a429572f8e28396017e",
+      "v7_sha256": "fbfa208e093f628e2ea30340aff8134b0933804d9bb72a429572f8e28396017e",
+      "status": "unchanged"
+    },
+    {
+      "path": "sample/Aacharya_Tuition_Master_v6_FAKE_DATA_SAMPLE.xlsx",
+      "baseline_sha256": "46f015f7ee641f0337fe248af67d21a78d360c5b784b9e92d0a56b2485eaecdb",
+      "v7_sha256": "46f015f7ee641f0337fe248af67d21a78d360c5b784b9e92d0a56b2485eaecdb",
+      "status": "unchanged"
+    },
+    {
+      "path": "sample/README.txt",
+      "baseline_sha256": "734383212869f2ce2480e4434483e37e4cc7e0535349251e102656df5dc7ec6b",
+      "v7_sha256": "734383212869f2ce2480e4434483e37e4cc7e0535349251e102656df5dc7ec6b",
+      "status": "unchanged"
+    },
+    {
+      "path": "scripts/reliability-v6.1.js",
+      "baseline_sha256": "d32566f188abd5cebc0aefdb82c5c0f46a5c01789acff656ca3066ed49ec82b4",
+      "v7_sha256": "d32566f188abd5cebc0aefdb82c5c0f46a5c01789acff656ca3066ed49ec82b4",
+      "status": "unchanged"
+    },
+    {
+      "path": "scripts/smoke-v6.js",
+      "baseline_sha256": "dc40be41581446ffffcf1bff73a3cc15cca432c3163c72026d2b88c5f4182b0a",
+      "v7_sha256": "dc40be41581446ffffcf1bff73a3cc15cca432c3163c72026d2b88c5f4182b0a",
+      "status": "unchanged"
+    },
+    {
+      "path": "scripts/smoke.js",
+      "baseline_sha256": "e191af99c76d6cf8524c8854400fe97f1c1e5c3a43f02c7db7fbde3ae631ae4f",
+      "v7_sha256": "e191af99c76d6cf8524c8854400fe97f1c1e5c3a43f02c7db7fbde3ae631ae4f",
+      "status": "unchanged"
+    },
+    {
+      "path": "server.js",
+      "baseline_sha256": "0756275b8003f6c74f94ab753a0ba87f0bf14e0f7612c1488af8d4e633aacc6e",
+      "v7_sha256": "e0c5baf49d67287c9b9d92b32d601915855c3e9cada85cdc004a9eeccbf3617c",
+      "status": "extended_or_fixed"
+    },
+    {
+      "path": "SOURCE_V5_3.md",
+      "baseline_sha256": "c0b33d04e516d5934b4d6223549bbd900ccdbf6ebcc606c7d2596bd3970ab1fb",
+      "v7_sha256": "c0b33d04e516d5934b4d6223549bbd900ccdbf6ebcc606c7d2596bd3970ab1fb",
+      "status": "unchanged"
+    },
+    {
+      "path": "START_HERE.md",
+      "baseline_sha256": "ac86b0213db8bb7f5e5afa9d3f63ea9c9f40707621eb304f0b4664a9001e3465",
+      "v7_sha256": "b708861fbb10dc3094d26300e8f8365ac1cc68595520298909820e08b02e3b5f",
+      "status": "extended_or_fixed"
+    },
+    {
+      "path": "V5_2_THEME_GUIDE.md",
+      "baseline_sha256": "c84c00aae6641703b314b3cdc9debc89a310bdce22c4f17baf323fcc21f0170e",
+      "v7_sha256": "c84c00aae6641703b314b3cdc9debc89a310bdce22c4f17baf323fcc21f0170e",
+      "status": "unchanged"
+    },
+    {
+      "path": "V5_3_BASELINE_SHA256.txt",
+      "baseline_sha256": "b47c4b8d895eaf63d72a19a3aadf5c1d0537ea8642f31a65be9ab1ee2f16999b",
+      "v7_sha256": "b47c4b8d895eaf63d72a19a3aadf5c1d0537ea8642f31a65be9ab1ee2f16999b",
+      "status": "unchanged"
+    },
+    {
+      "path": "V5_EXCEL_GUIDE.md",
+      "baseline_sha256": "c86db18366de36b9c4dfd1e3b8381a3be181f243143dd95f8fa81e29128b2005",
+      "v7_sha256": "c86db18366de36b9c4dfd1e3b8381a3be181f243143dd95f8fa81e29128b2005",
+      "status": "unchanged"
+    },
+    {
+      "path": "V5_UI_GUIDE.md",
+      "baseline_sha256": "d71408e73e6213fe9f9cdbe1c356c1578ba6005726f91c74a6753b20e68bcb83",
+      "v7_sha256": "d71408e73e6213fe9f9cdbe1c356c1578ba6005726f91c74a6753b20e68bcb83",
+      "status": "unchanged"
+    },
+    {
+      "path": "V6_1_DATA_RELIABILITY.md",
+      "baseline_sha256": "23c2f5bec47afbd49dfa2f386bd7572a4456e721e110d4d99699d0082b7703a9",
+      "v7_sha256": "23c2f5bec47afbd49dfa2f386bd7572a4456e721e110d4d99699d0082b7703a9",
+      "status": "unchanged"
+    },
+    {
+      "path": "V6_EXCEL_GUIDE.md",
+      "baseline_sha256": "9b7f9d39f0f415246851ae96a1bae6a0e8720f524512a5b87e342d4ad90a96ff",
+      "v7_sha256": "9b7f9d39f0f415246851ae96a1bae6a0e8720f524512a5b87e342d4ad90a96ff",
+      "status": "unchanged"
+    },
+    {
+      "path": "V6_PARENT_PORTAL_GUIDE.md",
+      "baseline_sha256": "1e1f3167a85068ad41f0cb3cb456003572105c5ff9a4bd640de98db71fb6be58",
+      "v7_sha256": "1e1f3167a85068ad41f0cb3cb456003572105c5ff9a4bd640de98db71fb6be58",
+      "status": "unchanged"
+    }
+  ]
+}

@@ -1,0 +1,570 @@
+{
+  "version": "7.0.0",
+  "files": [
+    {
+      "path": ".env.example",
+      "bytes": 497,
+      "sha256": "26e20f7fe020b30ba291537e75a0ff14b85320c5d0c374d811999817cbfebb8a"
+    },
+    {
+      "path": ".gitignore",
+      "bytes": 432,
+      "sha256": "261c2b6a60eeec7638abce2c856cd6f0ac641e69ab526b5d59bbaeda977a927a"
+    },
+    {
+      "path": "CHANGELOG.md",
+      "bytes": 4364,
+      "sha256": "3e8a36b26c123ebfbcddb5dd5bfed8ecd88f7727869343013803e14c74466373"
+    },
+    {
+      "path": "DATA_SAFETY.md",
+      "bytes": 5586,
+      "sha256": "f50f8dfcfc5ee9cedaefe9dc0d11d183cd03271318b596a9eeb658aecd48093b"
+    },
+    {
+      "path": "EXCEL_COMPATIBILITY.md",
+      "bytes": 516,
+      "sha256": "069ab1d78669c32b136eba1358945676e9e5bb12711842e7ee013d5bb8cd565d"
+    },
+    {
+      "path": "QA_INTEGRATED.md",
+      "bytes": 1061,
+      "sha256": "dec16884bceeeaa5aeb3f9d4af8340ce3ae3322a0ee341fc7cc07ecb5f592ab6"
+    },
+    {
+      "path": "QA_V4.md",
+      "bytes": 1956,
+      "sha256": "66656189fa66d81482f265c64ae2d62bfcf7db144da7ea7cbf051cfcda557026"
+    },
+    {
+      "path": "QA_V5.md",
+      "bytes": 895,
+      "sha256": "0c1fff6d7badc4e2ba3d24fdd431d5ae2e8f738e893b0353ee57107a4f2c5af3"
+    },
+    {
+      "path": "QA_V5_2.md",
+      "bytes": 912,
+      "sha256": "c30fa9d827434a1736bed7a66d8481998bde0a8d7da41e2d7bfa7828367de63b"
+    },
+    {
+      "path": "QA_V5_3.md",
+      "bytes": 1859,
+      "sha256": "2ada058e26443ea967588f49780b18336adc622b0f6f29b37542acd3c59a6527"
+    },
+    {
+      "path": "QA_V6.md",
+      "bytes": 1212,
+      "sha256": "8c1e968410c4c85c3a31c2bdd5c2f55757d59a4b5a2090888a6f9daaff707b47"
+    },
+    {
+      "path": "QA_V6_1.md",
+      "bytes": 1066,
+      "sha256": "f52ba95c02db6fed0a8a27427993f2059afc3f81f3976f20b4cbda8846963989"
+    },
+    {
+      "path": "QA_V7.md",
+      "bytes": 7545,
+      "sha256": "ee2144da788d622bfd60a36471b4cf4e588602f8ed3bba2a2d036deb86ee8391"
+    },
+    {
+      "path": "README.md",
+      "bytes": 3603,
+      "sha256": "f90a7b811c856f2ef555d5596be4f9d9b9e69a8d3d9e59e053e575d084cb6ea4"
+    },
+    {
+      "path": "RENDER_SETUP.md",
+      "bytes": 3339,
+      "sha256": "f672585ec2d948e3fc842a98d89d687b1e8cdaa40eabade639587976726e08be"
+    },
+    {
+      "path": "RENDER_SETUP_MAIN_ONLY.md",
+      "bytes": 526,
+      "sha256": "be6bf8a6229aec2d046594b5c4b873c868ed6e7be014bf192eeb76f6c19a48c6"
+    },
+    {
+      "path": "SOURCE_V5_3.md",
+      "bytes": 494,
+      "sha256": "c0b33d04e516d5934b4d6223549bbd900ccdbf6ebcc606c7d2596bd3970ab1fb"
+    },
+    {
+      "path": "START_HERE.md",
+      "bytes": 2226,
+      "sha256": "b708861fbb10dc3094d26300e8f8365ac1cc68595520298909820e08b02e3b5f"
+    },
+    {
+      "path": "V5_2_THEME_GUIDE.md",
+      "bytes": 1288,
+      "sha256": "c84c00aae6641703b314b3cdc9debc89a310bdce22c4f17baf323fcc21f0170e"
+    },
+    {
+      "path": "V5_3_BASELINE_SHA256.txt",
+      "bytes": 5139,
+      "sha256": "b47c4b8d895eaf63d72a19a3aadf5c1d0537ea8642f31a65be9ab1ee2f16999b"
+    },
+    {
+      "path": "V5_EXCEL_GUIDE.md",
+      "bytes": 4026,
+      "sha256": "c86db18366de36b9c4dfd1e3b8381a3be181f243143dd95f8fa81e29128b2005"
+    },
+    {
+      "path": "V5_UI_GUIDE.md",
+      "bytes": 2115,
+      "sha256": "d71408e73e6213fe9f9cdbe1c356c1578ba6005726f91c74a6753b20e68bcb83"
+    },
+    {
+      "path": "V6.1_BASELINE_MANIFEST.json",
+      "bytes": 13749,
+      "sha256": "83319d591abc627983627dfc265fbed7b7e145eb64707118682704881fea89f4"
+    },
+    {
+      "path": "V6_1_DATA_RELIABILITY.md",
+      "bytes": 3280,
+      "sha256": "23c2f5bec47afbd49dfa2f386bd7572a4456e721e110d4d99699d0082b7703a9"
+    },
+    {
+      "path": "V6_EXCEL_GUIDE.md",
+      "bytes": 2500,
+      "sha256": "9b7f9d39f0f415246851ae96a1bae6a0e8720f524512a5b87e342d4ad90a96ff"
+    },
+    {
+      "path": "V6_PARENT_PORTAL_GUIDE.md",
+      "bytes": 2879,
+      "sha256": "1e1f3167a85068ad41f0cb3cb456003572105c5ff9a4bd640de98db71fb6be58"
+    },
+    {
+      "path": "V7_EXCEL_GUIDE.md",
+      "bytes": 3920,
+      "sha256": "bb5ab7dd7957817e081f87daede9a3d81a5a1c3d85bc3e684b0ba6df2bf358a0"
+    },
+    {
+      "path": "V7_FEATURE_GUIDE.md",
+      "bytes": 7880,
+      "sha256": "eb486800a59aa81abeae1e17265abe3a9054ad81a83b655071af071cb0d5eb0e"
+    },
+    {
+      "path": "V7_UPGRADE_FILE_MAP.json",
+      "bytes": 18621,
+      "sha256": "a10e3f2ae56da37a109a10a1e6de6a8306cb494c9d3ec4250925a3f39b09520d"
+    },
+    {
+      "path": "integration/integrated-parent-portal.js",
+      "bytes": 69041,
+      "sha256": "fef5c22a059657a690d1fe1312aa16cf00b00e000120bb4c713e3149528951de"
+    },
+    {
+      "path": "integration/parent-portal-bridge.js",
+      "bytes": 7471,
+      "sha256": "75a9ab07b015d0f2aff836620e52d4d721f84011c3731b431b75d1c15a17da47"
+    },
+    {
+      "path": "lib/mini-express.js",
+      "bytes": 6378,
+      "sha256": "547bd24f1378f16c1140732466b59ce49e1ee1abbf0fc84c908455e41d529c1c"
+    },
+    {
+      "path": "lib/xlsx-safe.js",
+      "bytes": 27700,
+      "sha256": "be3deaf75f8b16213c793edcd5c997c1f0a7732598405757b3d24d28202f7d8c"
+    },
+    {
+      "path": "package-lock.json",
+      "bytes": 284,
+      "sha256": "c1df9f9fa7d65c9569a46880eccdf16fae0a76916e908623ca4eeed3f3359eef"
+    },
+    {
+      "path": "package.json",
+      "bytes": 651,
+      "sha256": "26fda7a3c583f4955ad874567268005e2814f0aad4b89bdfc437b2ce8a296aa7"
+    },
+    {
+      "path": "parent-portal-extension/CHANGELOG.md",
+      "bytes": 1025,
+      "sha256": "d243d114b0932813b55a8de3ab7820d52d3621291d4a85f2840df20b46f8a43d"
+    },
+    {
+      "path": "parent-portal-extension/QA.md",
+      "bytes": 2268,
+      "sha256": "154d13f2097511f917c633c36717af35685b732a1a6b7059445842fe8ff20493"
+    },
+    {
+      "path": "parent-portal-extension/README.md",
+      "bytes": 6161,
+      "sha256": "341f3f773c27eb0cfd7fa31c892d1a8793f3771ef41d8de343075ff580ecd283"
+    },
+    {
+      "path": "parent-portal-extension/RENDER_SETUP.md",
+      "bytes": 2430,
+      "sha256": "1815fed7c932316f64bf08023f55d758b7ef1f533fc9114378696ce84f98a9f5"
+    },
+    {
+      "path": "parent-portal-extension/integration/main-v3/MAIN_V3_INTEGRATION.md",
+      "bytes": 1126,
+      "sha256": "0b815aeed31315e84fe69021e9f5cde8f95d7546b49a44d4213124f9e38a0567"
+    },
+    {
+      "path": "parent-portal-extension/integration/main-v3/parent-portal-bridge.js",
+      "bytes": 7471,
+      "sha256": "75a9ab07b015d0f2aff836620e52d4d721f84011c3731b431b75d1c15a17da47"
+    },
+    {
+      "path": "parent-portal-extension/lib/mini-express.js",
+      "bytes": 6063,
+      "sha256": "ecfa35b61aa6ce04772de0af3f78a145eb90d0c5012525fe4221a1ab3146463d"
+    },
+    {
+      "path": "parent-portal-extension/package-lock.json",
+      "bytes": 285,
+      "sha256": "749cdac3293cb31b00aee9944d785d0edac06c570735fcb1e02d6c5b869fb090"
+    },
+    {
+      "path": "parent-portal-extension/package.json",
+      "bytes": 290,
+      "sha256": "9dfff7995de56906a82ce51e0188c9ccf59cae57fd5d9e81007636d47fb55a1b"
+    },
+    {
+      "path": "parent-portal-extension/public/aacharya-app-icon.png",
+      "bytes": 505478,
+      "sha256": "849148853e6a51bc786b92360cb6e539f7260cc3a98d6506550c07c722aeea52"
+    },
+    {
+      "path": "parent-portal-extension/public/extension-admin.html",
+      "bytes": 4593,
+      "sha256": "eef6087cf2de7316af5a678605769457d4734100dba029c0001a7a7e060c0fd7"
+    },
+    {
+      "path": "parent-portal-extension/public/extension-admin.js",
+      "bytes": 11687,
+      "sha256": "c1d2375ba57072981e55e837fb0467593faae8a8a389f1d735e814ffc623e618"
+    },
+    {
+      "path": "parent-portal-extension/public/manifest.json",
+      "bytes": 351,
+      "sha256": "6edfb7b446f966673cd3a0f943eedb040076e9baa7a970040800f148a7c8a368"
+    },
+    {
+      "path": "parent-portal-extension/public/parent.html",
+      "bytes": 6322,
+      "sha256": "07a197bdefaad924e74d66683c73e83dbb4303639340d4131aede1a2450675f5"
+    },
+    {
+      "path": "parent-portal-extension/public/parent.js",
+      "bytes": 9818,
+      "sha256": "4dca96c6301c7e6bfb65c88dce2ccd9d6e9d43e3474ac8f3b0c0851e49734993"
+    },
+    {
+      "path": "parent-portal-extension/public/signup.html",
+      "bytes": 1472,
+      "sha256": "b3d36b07b28b22ced95062952b52e7aeef5ff7e24a6ead4ee671cc76f5d6292d"
+    },
+    {
+      "path": "parent-portal-extension/public/signup.js",
+      "bytes": 1488,
+      "sha256": "4149d4ebfe5ad2f86675abea4427009260caeeddbd47541baabb4648dfde5639"
+    },
+    {
+      "path": "parent-portal-extension/public/styles.css",
+      "bytes": 5536,
+      "sha256": "edd8c2ec93a4aa6f93f6e2865d093f7a806af5ef8999925b13e2e535fbe236f6"
+    },
+    {
+      "path": "parent-portal-extension/render-extension-only.yaml",
+      "bytes": 1027,
+      "sha256": "c2aee1f1d68d911f016de350264d5ad140181a05771d9b7c85f7cb25c47fa352"
+    },
+    {
+      "path": "parent-portal-extension/scripts/smoke.js",
+      "bytes": 4309,
+      "sha256": "2dd5cf0e3301707a89a9f029a993a3ce4c57ae9c5c895775ee1b5c658263963b"
+    },
+    {
+      "path": "parent-portal-extension/server.js",
+      "bytes": 45162,
+      "sha256": "4143cf37771ae4152eb987a3d1c2f1a31970c1994464f492f06219582c5603fa"
+    },
+    {
+      "path": "public/aacharya-app-icon.png",
+      "bytes": 505478,
+      "sha256": "849148853e6a51bc786b92360cb6e539f7260cc3a98d6506550c07c722aeea52"
+    },
+    {
+      "path": "public/admin.html",
+      "bytes": 17401,
+      "sha256": "538e9333e2fa71cc7b03f39a8df77f2f96673cb934cd076b177852a64b3575d0"
+    },
+    {
+      "path": "public/admin.js",
+      "bytes": 43986,
+      "sha256": "b934b0f44ad419a62c5acf4e2caa256a1addf6e2e8b97ab59a6df3b97db258e0"
+    },
+    {
+      "path": "public/apply.html",
+      "bytes": 3404,
+      "sha256": "aa4ce837bb2084fbce93b3063a8d7a86aaa0c8419e85a37d8ddd4c105dc3457b"
+    },
+    {
+      "path": "public/apply.js",
+      "bytes": 2127,
+      "sha256": "aaf1c5b03f9595696981bb9506b9b422a129692133814387079d7514b06c6ace"
+    },
+    {
+      "path": "public/favicon.svg",
+      "bytes": 319,
+      "sha256": "91b99fc0b10d4617b99e7e1bba4b7c4451dcdcb6989c5c9a448041a96150e0bd"
+    },
+    {
+      "path": "public/manifest.json",
+      "bytes": 347,
+      "sha256": "92f7f6e23d51190fd8685f9ce109261a92eba2ddd1f55e9fd114d9b512b4f3db"
+    },
+    {
+      "path": "public/parent-portal.css",
+      "bytes": 6702,
+      "sha256": "f6d41abedc5d480907b41da5dc9aeea9cbb52f14059d414bd4d7003f647a7d2b"
+    },
+    {
+      "path": "public/parent-signup.html",
+      "bytes": 1641,
+      "sha256": "de8e578778f88402bdb625bcdc5d80a9763d2db43109052e15b93560455b9281"
+    },
+    {
+      "path": "public/parent-signup.js",
+      "bytes": 2566,
+      "sha256": "5e7db9aca3d23819ed9732b248a46a62fd01c878ba02e9674c2129cdead9ddea"
+    },
+    {
+      "path": "public/parent.html",
+      "bytes": 7074,
+      "sha256": "235a9ac8df94118fc32c5d9c24160e76ec3b30f7b21e4b145ea4cb9ba80c5b47"
+    },
+    {
+      "path": "public/parent.js",
+      "bytes": 13125,
+      "sha256": "5f58cd15baeb72cbd6c4d320f6d1940a4378127e42d37cd99c8d36c598d10fd7"
+    },
+    {
+      "path": "public/student.html",
+      "bytes": 1629,
+      "sha256": "579aba147d497a3a56a1d60530f581e5670e4a037a95413d79eae5c96e9dfc0d"
+    },
+    {
+      "path": "public/styles.css",
+      "bytes": 21055,
+      "sha256": "9cd73e2596992290715d944db623e8333d5cd87bde866df8180dcd0b2dc94d55"
+    },
+    {
+      "path": "public/sw.js",
+      "bytes": 766,
+      "sha256": "a4975eb50ecc2e961d53c12057235751835580bd139d6a6f960e8432c3f7804d"
+    },
+    {
+      "path": "public/teacher.html",
+      "bytes": 1629,
+      "sha256": "551e8d46a7bc48d6153a402f452cc5613748294ee85624c927d5672af3787450"
+    },
+    {
+      "path": "public/v7-admin.js",
+      "bytes": 52113,
+      "sha256": "bc6f9eede60f77c037b83f46cd3d592f511c3d4779d5c37373f7ec39fedc173d"
+    },
+    {
+      "path": "public/v7-parent.js",
+      "bytes": 5146,
+      "sha256": "21bc2cad8d19360f2064e026a88f7fd609e5657212d364211c5d69b2f94023fd"
+    },
+    {
+      "path": "public/v7-portal.js",
+      "bytes": 13651,
+      "sha256": "d9c46c5896eda21cac8e89d53d8ce77002eee35fc2e6a2b1948da218c541d28b"
+    },
+    {
+      "path": "public/v7-print.css",
+      "bytes": 1294,
+      "sha256": "d67d18ad4d11d66f692a4e31c173475378de9222e1041e7b96c650099aaf79b6"
+    },
+    {
+      "path": "public/v7-print.js",
+      "bytes": 94,
+      "sha256": "0d428dd7805b5fcf948f00b3241c735f5132c5b81bf078c2c7233b78a1114127"
+    },
+    {
+      "path": "public/v7-ui.js",
+      "bytes": 8169,
+      "sha256": "2fb11a0adf2734803532950f6fb37bba13fc17026c420c3cba9b9197caf52bc2"
+    },
+    {
+      "path": "public/v7.css",
+      "bytes": 9642,
+      "sha256": "5ecf9202eef825fd734ba8019e4ff1171f31cb1c2573840b0308fecdfd1d567b"
+    },
+    {
+      "path": "qa/automated-results.json",
+      "bytes": 6077,
+      "sha256": "6eecdd4cecc9bc451c8908707f1cab8241b059d6cd1ede3ffc564669cd416497"
+    },
+    {
+      "path": "qa/browser-results.json",
+      "bytes": 852,
+      "sha256": "06584a4df832a948d023f954215222ec2c0ed14492ee4e8c12b9e05e5b51467f"
+    },
+    {
+      "path": "qa/workbook-validation.json",
+      "bytes": 1209,
+      "sha256": "5634f20175b43ba30420365632153d7bc59f27cb8c237bdeb8ef38b3aee388e9"
+    },
+    {
+      "path": "render.yaml",
+      "bytes": 1244,
+      "sha256": "a9aba028a5190f6c35bc82bc6e3c335f758663fc495f935916f9293b55ac8579"
+    },
+    {
+      "path": "sample/README.txt",
+      "bytes": 690,
+      "sha256": "734383212869f2ce2480e4434483e37e4cc7e0535349251e102656df5dc7ec6b"
+    },
+    {
+      "path": "scripts/check-source-v7.js",
+      "bytes": 1883,
+      "sha256": "68049736cbcb7a531c1933ff3566e4921f9a39039355453b515dd275d8461aee"
+    },
+    {
+      "path": "scripts/fixtures/v61/README.md",
+      "bytes": 455,
+      "sha256": "4fa797469a8976f77e3dbafe686fb6cfa5354b5cd353c5a7dad734d7c9717e3c"
+    },
+    {
+      "path": "scripts/fixtures/v61/aacharya_tuition.sqlite",
+      "bytes": 196608,
+      "sha256": "64f72bfb0f8202f27641903d02b7ffdf569f403fb3534a87fa82fb882210b222"
+    },
+    {
+      "path": "scripts/fixtures/v61/aacharya_tuition.sqlite-shm",
+      "bytes": 32768,
+      "sha256": "fd4c9fda9cd3f9ae7c962b0ddf37232294d55580e1aa165aa06129b8549389eb"
+    },
+    {
+      "path": "scripts/fixtures/v61/aacharya_tuition.sqlite-wal",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "scripts/fixtures/v61/expected.json",
+      "bytes": 11128,
+      "sha256": "a0f703d2c17ce75465f3e09b497a30a9f27438ac934f4abb42bbebedb4279104"
+    },
+    {
+      "path": "scripts/fixtures/v61/payment-proofs-v6/PARENT_1789308209146_6a4962a0b14d.png",
+      "bytes": 68,
+      "sha256": "431ced6916a2a21a156e38701afe55bbd7f88969fbbfc56d7fe099d47f265460"
+    },
+    {
+      "path": "scripts/package-v7.py",
+      "bytes": 1482,
+      "sha256": "4f898ce08239136aca691898b60b02982eeafd4ce768601a3ef0b2995739c803"
+    },
+    {
+      "path": "scripts/reliability-v6.1.js",
+      "bytes": 5746,
+      "sha256": "d32566f188abd5cebc0aefdb82c5c0f46a5c01789acff656ca3066ed49ec82b4"
+    },
+    {
+      "path": "scripts/smoke-v6.js",
+      "bytes": 13193,
+      "sha256": "dc40be41581446ffffcf1bff73a3cc15cca432c3163c72026d2b88c5f4182b0a"
+    },
+    {
+      "path": "scripts/smoke.js",
+      "bytes": 6178,
+      "sha256": "e191af99c76d6cf8524c8854400fe97f1c1e5c3a43f02c7db7fbde3ae631ae4f"
+    },
+    {
+      "path": "scripts/test-browser-v7.js",
+      "bytes": 10311,
+      "sha256": "b445e55709239859fab8f6d85825e653cb52cce259fdb1d16c4ea79b94a74066"
+    },
+    {
+      "path": "scripts/test-v7.js",
+      "bytes": 38670,
+      "sha256": "781fa5af8de6f57ff4a5f96c309dcd7d6ab61676d5a6a162ace0541e49d75a65"
+    },
+    {
+      "path": "scripts/validate-workbook-v7.py",
+      "bytes": 3450,
+      "sha256": "5dfe1848e4f6af7494733feac17492359f5512d528490730a3c08aad2b75cbcf"
+    },
+    {
+      "path": "server.js",
+      "bytes": 106552,
+      "sha256": "e0c5baf49d67287c9b9d92b32d601915855c3e9cada85cdc004a9eeccbf3617c"
+    },
+    {
+      "path": "v7/academics.js",
+      "bytes": 17254,
+      "sha256": "cf37f5731a1d8c6280ea778d7b731836d435abae0427ede25942e190c51d40dc"
+    },
+    {
+      "path": "v7/accounts.js",
+      "bytes": 10982,
+      "sha256": "f1a833f9c536a115af543f97b52ec40f225e9a3e476a7a810c2f78bd69582ec8"
+    },
+    {
+      "path": "v7/archive.js",
+      "bytes": 1239,
+      "sha256": "9dbec86b3de118e16c6d23801186fb30648442932c2cb28f44171483fba69718"
+    },
+    {
+      "path": "v7/auth.js",
+      "bytes": 6347,
+      "sha256": "ce4d3e65fd2a26d4a570eae6e05d18a2c87e62328cbdd9f422da26ae40e7a0b8"
+    },
+    {
+      "path": "v7/context.js",
+      "bytes": 84,
+      "sha256": "38a402d0359a0d2f423dee391214bfee8da504e120b19821b57a35ee035ba5e6"
+    },
+    {
+      "path": "v7/finance.js",
+      "bytes": 12874,
+      "sha256": "519a5e965d069af74c4711a579910cec0749b13275ee79ecc8296ff8ec76057f"
+    },
+    {
+      "path": "v7/index.js",
+      "bytes": 10289,
+      "sha256": "9e3e79ef1cc9d369b9c768552e11ae6255175c33ffba9e12b7155a5d75867cea"
+    },
+    {
+      "path": "v7/management.js",
+      "bytes": 12093,
+      "sha256": "085a855bf125737dd1fbc79e1e01648506c064adce2257e45b8eb7a6e98f589f"
+    },
+    {
+      "path": "v7/migrations.js",
+      "bytes": 12467,
+      "sha256": "3198b397c2bdb6fccd1349158f2ea0dccd6cab8ce302d28345c3aa33ebe7c324"
+    },
+    {
+      "path": "v7/portal.js",
+      "bytes": 15228,
+      "sha256": "472abd4c38f00fd3fd7726c6af120886f7facfef9c8d4735989868da1defd89a"
+    },
+    {
+      "path": "v7/reports.js",
+      "bytes": 26674,
+      "sha256": "b4e208c78311e1f0cf3d0457662981852cc6fc31bd374e2b321dee13b791e301"
+    },
+    {
+      "path": "v7/safety.js",
+      "bytes": 3248,
+      "sha256": "c5758255d7f8e873be43b5c43c9bba0e4df4c49e7f5869ca30bfabb159ac5100"
+    },
+    {
+      "path": "v7/security.js",
+      "bytes": 3643,
+      "sha256": "fef4ab8330133dd121655415788637c2e6a073fbfbee5e8f91e09cb32708aa1a"
+    },
+    {
+      "path": "v7/workbook.js",
+      "bytes": 4419,
+      "sha256": "014430f5e53c69e60574d114edc4504ca379c57a3098b6894112c479237574b0"
+    }
+  ]
+}

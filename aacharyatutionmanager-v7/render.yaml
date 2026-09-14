@@ -1,0 +1,43 @@
+# Existing service upgrade: keep its service name, ID, env vars and /var/data disk.
+# Use the Render dashboard Root Directory change described in RENDER_SETUP.md.
+# This template is also suitable for a new service after configuring credentials.
+services:
+  - type: web
+    name: aacharya-tuition-manager-v6
+    runtime: node
+    rootDir: aacharya-student-intake-render-v7
+    plan: 0.5c-512mb
+    buildCommand: npm ci --omit=dev
+    startCommand: npm start
+    healthCheckPath: /api/health
+    envVars:
+      - key: NODE_VERSION
+        value: 24.19.0
+      - key: NODE_ENV
+        value: production
+      - key: DATA_DIR
+        value: /var/data
+      - key: ADMIN_NAME
+        value: Aacharya Sudheer
+      - key: ADMIN_EMAIL
+        sync: false
+      - key: ADMIN_PASSWORD
+        sync: false
+      - key: SESSION_SECRET
+        generateValue: true
+      - key: ADMIN_SYNC_KEY
+        generateValue: true
+      - key: PARENT_SESSION_SECRET
+        generateValue: true
+      - key: INVITE_VALID_DAYS
+        value: 7
+      - key: COURSE_GRACE_DAYS
+        value: 7
+      - key: MAX_PROOF_BYTES
+        value: 5242880
+      - key: DB_BACKUP_KEEP
+        value: 20
+    disk:
+      name: aacharya-data
+      mountPath: /var/data
+      sizeGB: 1
