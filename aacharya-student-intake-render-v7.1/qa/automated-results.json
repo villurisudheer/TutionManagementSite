@@ -1,0 +1,229 @@
+{
+  "version": "7.0.0",
+  "passed": true,
+  "checks": 495,
+  "scenarios": 44,
+  "results": [
+    {
+      "name": "V6.1 additive migration preserves every source table and row",
+      "assertions": 54,
+      "passed": true
+    },
+    {
+      "name": "Admin login and protected endpoints",
+      "assertions": 4,
+      "passed": true
+    },
+    {
+      "name": "Admissions submission, transactional acceptance, permanence and duplicate prevention",
+      "assertions": 11,
+      "passed": true
+    },
+    {
+      "name": "Student creation, editing, optimistic conflict and active filters",
+      "assertions": 5,
+      "passed": true
+    },
+    {
+      "name": "Subjects and teacher CRUD with assignment",
+      "assertions": 8,
+      "passed": true
+    },
+    {
+      "name": "Batch creation, membership and capacity validation",
+      "assertions": 6,
+      "passed": true
+    },
+    {
+      "name": "Enrollment dates, warnings, grace, hold and resume",
+      "assertions": 11,
+      "passed": true
+    },
+    {
+      "name": "Class scheduler, batch sessions, recurring dates and conflict atomicity",
+      "assertions": 6,
+      "passed": true
+    },
+    {
+      "name": "Class completion, per-class/bulk attendance, cancelled denominator and teacher hours",
+      "assertions": 11,
+      "passed": true
+    },
+    {
+      "name": "Fees and official payment ledger allocation",
+      "assertions": 5,
+      "passed": true
+    },
+    {
+      "name": "Invitation-only signup, one-time use and multiple linked children",
+      "assertions": 11,
+      "passed": true
+    },
+    {
+      "name": "Parent IDOR and compulsory private payment proof",
+      "assertions": 10,
+      "passed": true
+    },
+    {
+      "name": "Proof reject, replacement, preserved file history and atomic approval",
+      "assertions": 9,
+      "passed": true
+    },
+    {
+      "name": "Payment edits, conflict detection, historical values and current-only totals",
+      "assertions": 13,
+      "passed": true
+    },
+    {
+      "name": "Receipt generation and parent authorization",
+      "assertions": 4,
+      "passed": true
+    },
+    {
+      "name": "Teacher and student account creation and backend authorization",
+      "assertions": 13,
+      "passed": true
+    },
+    {
+      "name": "Tests, marks, percentage, teacher scope and student performance",
+      "assertions": 6,
+      "passed": true
+    },
+    {
+      "name": "Assignments and student submission lifecycle",
+      "assertions": 8,
+      "passed": true
+    },
+    {
+      "name": "Announcement audience enforcement and notification read state",
+      "assertions": 10,
+      "passed": true
+    },
+    {
+      "name": "Renewal clarification and idempotent new-enrollment approval",
+      "assertions": 6,
+      "passed": true
+    },
+    {
+      "name": "True alumni and rejoined student course history",
+      "assertions": 7,
+      "passed": true
+    },
+    {
+      "name": "Parent manual disable persists; reset credentials invalidates old sessions",
+      "assertions": 11,
+      "passed": true
+    },
+    {
+      "name": "Parent unlink revokes access without destroying history",
+      "assertions": 4,
+      "passed": true
+    },
+    {
+      "name": "Documents remain private and preserve exact branding",
+      "assertions": 5,
+      "passed": true
+    },
+    {
+      "name": "CSV preview rejects corruption and commit is atomic/idempotent",
+      "assertions": 9,
+      "passed": true
+    },
+    {
+      "name": "Global search, filters, report exports and financial history separation",
+      "assertions": 20,
+      "passed": true
+    },
+    {
+      "name": "Student archive/reactivate preserves every related table",
+      "assertions": 41,
+      "passed": true
+    },
+    {
+      "name": "Safety backups, integrity and relationship checks",
+      "assertions": 9,
+      "passed": true
+    },
+    {
+      "name": "Broken admission links repair and safe missing-student recovery",
+      "assertions": 7,
+      "passed": true
+    },
+    {
+      "name": "Class rescheduling detects conflicts and retains batch sessions",
+      "assertions": 4,
+      "passed": true
+    },
+    {
+      "name": "Complete backup includes SQLite and private proof files",
+      "assertions": 3,
+      "passed": true
+    },
+    {
+      "name": "Financial changes fail safely when a snapshot cannot be written",
+      "assertions": 2,
+      "passed": true
+    },
+    {
+      "name": "Excel write failure does not lose a valid student save",
+      "assertions": 5,
+      "passed": true
+    },
+    {
+      "name": "Teachers archive/reactivate and existing sessions obey role state",
+      "assertions": 4,
+      "passed": true
+    },
+    {
+      "name": "Fee report and Student 360 use identical allocation and status",
+      "assertions": 3,
+      "passed": true
+    },
+    {
+      "name": "Legacy remote payment writes cannot bypass proof verification",
+      "assertions": 1,
+      "passed": true
+    },
+    {
+      "name": "Multiple admissions stress and missing identity recovery",
+      "assertions": 17,
+      "passed": true
+    },
+    {
+      "name": "Financial display permission hides historical fee notifications",
+      "assertions": 6,
+      "passed": true
+    },
+    {
+      "name": "Restart and redeploy-style restart preserve all row counts",
+      "assertions": 72,
+      "passed": true
+    },
+    {
+      "name": "Excel rebuild is read-only; 44 sheets and archive separation",
+      "assertions": 38,
+      "passed": true
+    },
+    {
+      "name": "Security headers, CSRF refusal, last-admin safeguard and logout revocation",
+      "assertions": 7,
+      "passed": true
+    },
+    {
+      "name": "Production persistent-disk warning and secure cookies",
+      "assertions": 3,
+      "passed": true
+    },
+    {
+      "name": "Missing database fails closed without replacing production data",
+      "assertions": 1,
+      "passed": true
+    },
+    {
+      "name": "Failed additive migration rolls back and retains its safety snapshot",
+      "assertions": 5,
+      "passed": true
+    }
+  ],
+  "finishedAt": "2026-09-14T06:42:44.474Z"
+}

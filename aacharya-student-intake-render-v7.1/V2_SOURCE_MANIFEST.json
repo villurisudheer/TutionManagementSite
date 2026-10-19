@@ -1,0 +1,57 @@
+[
+  {
+    "path": ".gitignore",
+    "bytes": 70,
+    "sha256": "20b099de1975f111a47c35a178fc0d94984f3451643dfce66ca52d61f7e632eb"
+  },
+  {
+    "path": ".node-version",
+    "bytes": 3,
+    "sha256": "68ca3fba3b7e864770cb61aeb306d4bd4354b68ab4dd38450860c5d823e42a53"
+  },
+  {
+    "path": "CHANGELOG.md",
+    "bytes": 820,
+    "sha256": "1adaa0986b4026da0963c692473f951fc46db3bc2833199919d197d7bc0b408b"
+  },
+  {
+    "path": "README.md",
+    "bytes": 7967,
+    "sha256": "2d67e674978119aa7b7ad59fc9ac8a86ed88c5bf821f48f4cf02d93d2dc490a6"
+  },
+  {
+    "path": "package.json",
+    "bytes": 356,
+    "sha256": "785b901ed2c5f1923d0e2750a277ec3b3dd957ce030d621e89cbd6800b4f00f7"
+  },
+  {
+    "path": "public/app.js",
+    "bytes": 34415,
+    "sha256": "cff1c8d0251479c6fe019dff6c434a86f24d49fe3423e1463b59919c80346d16"
+  },
+  {
+    "path": "public/index.html",
+    "bytes": 407,
+    "sha256": "193076de3f33562172713030dcd21d39c8b6026d4ba9d06753ea593f3bdc3c8f"
+  },
+  {
+    "path": "public/style.css",
+    "bytes": 9433,
+    "sha256": "c505cfc3e03c9ace7bd55c88cc1362f1d73609b2f2e1fd74bb6c4569126b9e1d"
+  },
+  {
+    "path": "render.yaml",
+    "bytes": 639,
+    "sha256": "e6442c6bca9255bd005eff20cba3e57154080f6be230d8eb3813a184e542b334"
+  },
+  {
+    "path": "server.mjs",
+    "bytes": 48247,
+    "sha256": "95c28f160f7ec7aa693dfc85238ff1002b438fc4e8d14736fe1cfa1adb081814"
+  },
+  {
+    "path": "tests/integration.test.mjs",
+    "bytes": 12183,
+    "sha256": "99cc8bbf6154ae3215addebfd484e2acd8ca1fad5a55ace7365e85f833ba0a24"
+  }
+]

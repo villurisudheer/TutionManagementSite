@@ -1,0 +1,92 @@
+const {chromium}=require(process.env.CODEX_PRIMARY_RUNTIME_NODE_MODULES+'/playwright');
+const assert=require('node:assert/strict');
+(async()=>{
+const browser=await chromium.launch({headless:true,args:['--no-sandbox']});
+const page=await browser.newPage({viewport:{width:1440,height:1100},deviceScaleFactor:1});
+const errors=[];page.on('pageerror',e=>errors.push(e.message));
+await page.goto('http://127.0.0.1:3000',{waitUntil:'networkidle'});
+await page.screenshot({path:'artifacts/desktop-home.png',fullPage:true});
+await page.getByRole('button',{name:'Generate practice set'}).click();
+assert.equal(await page.locator('[data-question]').count(),5);
+let a=await page.evaluate(()=>JSON.parse(localStorage.getItem('aacharya-chemistry-v1')).attempt);
+const {byId}=await import('../public/bank.js');
+// Correct selection must be preserved through reload, including option index zero.
+for(let i=0;i<5;i++){
+ await page.locator(`[data-question="${i}"]`).click();
+ const q=byId[a.questions[i].id];
+ if(q.type==='mcq')await page.locator(`input[name="answer"][value="${q.answer}"]`).check();
+ else await page.locator('#short-answer').fill(String(q.answer));
+}
+await page.reload();
+assert.equal(await page.locator('#answered-count').textContent(),'5');
+await page.locator('[data-question="4"]').click();
+await page.getByRole('button',{name:'Check my score'}).click();
+assert.equal(await page.locator('.score-ring').getAttribute('aria-label'),'5 out of 5 points');
+await page.screenshot({path:'artifacts/desktop-score.png',fullPage:true});
+assert.equal(await page.locator('.review-state.correct').count(),5);
+await page.locator('[data-review="0"]').click();
+assert.equal(await page.locator('.solution li').count()>1,true);
+assert.equal(await page.locator('input[name="answer"]:disabled').count(),4);
+await page.getByRole('button',{name:'Reset set',exact:false}).click();
+await page.locator('#dialog-confirm').click();
+a=await page.evaluate(()=>JSON.parse(localStorage.getItem('aacharya-chemistry-v1')).attempt);
+assert.deepEqual(a.answers,{});assert.deepEqual(a.revealed,[]);assert.equal(a.submitted,false);
+assert.equal(await page.locator('.solution').count(),0);
+// Wrong + assisted + 3 skipped yields zero, with explicit skip confirmation.
+await page.locator('input[name="answer"][value="1"]').check();
+await page.locator('[data-question="1"]').click();
+await page.locator('#reveal').click();
+await page.locator('#dialog-cancel').click();
+assert.equal(await page.locator('.solution').count(),0);
+await page.locator('#reveal').click();await page.locator('#dialog-confirm').click();
+assert.equal(await page.locator('.solution').count(),1);
+assert.equal(await page.locator('input[name="answer"]:disabled').count(),4);
+await page.locator('#finish-early').click();
+assert.match(await page.locator('#modal-content').textContent(),/3 questions are unanswered/);
+await page.locator('#dialog-confirm').click();
+assert.equal(await page.locator('.score-ring').getAttribute('aria-label'),'0 out of 5 points');
+assert.equal(await page.locator('.review-state.assisted').count(),1);
+assert.equal(await page.locator('.review-state.skipped').count(),3);
+assert.equal(await page.locator('.review-state.incorrect').count(),1);
+// Class 12 selection and all chapters. Numeric malformed entry blocks submission.
+await page.getByRole('button',{name:'Class 12',exact:true}).click();
+assert.equal(await page.locator('#topic option').count(),11);
+await page.locator('#topic').selectOption('solutions');
+await page.locator('#generate').click();
+a=await page.evaluate(()=>JSON.parse(localStorage.getItem('aacharya-chemistry-v1')).attempt);
+assert.equal(a.grade,12);assert.ok(a.questions.every(q=>q.id.startsWith('solutions-')));
+await page.locator('[data-question="3"]').click();
+await page.locator('#short-answer').fill('0.5wrong');
+await page.locator('#finish-early').click();
+assert.match(await page.locator('#answer-error').textContent(),/valid number/);
+assert.equal(await page.locator('#short-answer').getAttribute('aria-invalid'),'true');
+// Prevent accidental loss when generating a new set.
+await page.locator('#generate').click();await page.locator('#dialog-cancel').click();
+assert.equal(await page.locator('#short-answer').inputValue(),'0.5wrong');
+await page.locator('#short-answer').fill('0');
+await page.locator('#generate').click();await page.locator('#dialog-confirm').click();
+a=await page.evaluate(()=>JSON.parse(localStorage.getItem('aacharya-chemistry-v1')).attempt);assert.deepEqual(a.answers,{});
+await page.locator('#topic').selectOption('all');await page.locator('#generate').click();
+a=await page.evaluate(()=>JSON.parse(localStorage.getItem('aacharya-chemistry-v1')).attempt);assert.equal(a.topic,'all');assert.ok(a.questions.every(q=>byId[q.id].grade===12));
+// Mobile complete flow, no horizontal overflow, touch targets and readable inputs.
+const mobile=await browser.newPage({viewport:{width:390,height:844},deviceScaleFactor:1,isMobile:true,hasTouch:true});
+mobile.on('pageerror',e=>errors.push(e.message));
+await mobile.goto('http://127.0.0.1:3000',{waitUntil:'networkidle'});
+await mobile.screenshot({path:'artifacts/mobile-home.png',fullPage:true});
+assert.ok(await mobile.evaluate(()=>document.documentElement.scrollWidth<=innerWidth));
+await mobile.locator('#generate').click();
+await mobile.locator('input[name="answer"][value="0"]').check();
+await mobile.locator('#next').click();
+assert.equal(await mobile.locator('[aria-current="step"]').textContent(),'2');
+await mobile.locator('[data-question="3"]').click();await mobile.locator('#short-answer').fill('0.5');
+await mobile.screenshot({path:'artifacts/mobile-question.png',fullPage:true});
+assert.ok(await mobile.evaluate(()=>document.documentElement.scrollWidth<=innerWidth));
+await mobile.locator('#reset').click();await mobile.locator('#dialog-confirm').click();
+assert.equal(await mobile.locator('#answered-count').textContent(),'0');
+await mobile.locator('#finish-early').click();await mobile.locator('#dialog-confirm').click();
+assert.equal(await mobile.locator('.score-ring').getAttribute('aria-label'),'0 out of 5 points');
+await mobile.getByRole('button',{name:'About this practice'}).click();assert.match(await mobile.locator('dialog').textContent(),/133 questions/);await mobile.locator('#dialog-cancel').click();
+assert.deepEqual(errors,[]);
+console.log('PASS: desktop and mobile generation, class/topic filtering, persistence, correct/incorrect/skipped/assisted scoring, solution review, reset, invalid numeric input, discard confirmation, and no overflow.');
+await browser.close();
+})().catch(e=>{console.error(e);process.exit(1)});

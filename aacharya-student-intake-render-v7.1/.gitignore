@@ -1,0 +1,22 @@
+.env
+.env.*
+!.env.example
+node_modules/
+data/
+backups/
+private-v7/
+payment-proofs-v6/
+*.sqlite
+*.sqlite-wal
+*.sqlite-shm
+*.sqlite-journal
+*.partial
+*.tar.gz
+*.xlsx
+*.log
+.aacharya-data-state.json
+.aacharya-high-water.json
+# Artificial V6.1 compatibility fixture only, never used as the application DB.
+!scripts/fixtures/v61/aacharya_tuition.sqlite
+!scripts/fixtures/v61/payment-proofs-v6/
+!scripts/fixtures/v61/payment-proofs-v6/**
