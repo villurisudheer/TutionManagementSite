@@ -1,0 +1,41 @@
+services:
+  - type: web
+    name: aacharya-parent-portal
+    runtime: node
+    plan: 0.5c-512mb
+    buildCommand: npm install
+    startCommand: npm start
+    healthCheckPath: /api/health
+    envVars:
+      - key: NODE_VERSION
+        value: 24.14.1
+      - key: NODE_ENV
+        value: production
+      - key: DATA_DIR
+        value: /var/data
+      - key: PUBLIC_BASE_URL
+        sync: false
+      - key: EXTENSION_ADMIN_NAME
+        value: Aacharya Sudheer
+      - key: EXTENSION_ADMIN_EMAIL
+        sync: false
+      - key: EXTENSION_ADMIN_PASSWORD
+        sync: false
+      - key: EXTENSION_SESSION_SECRET
+        generateValue: true
+      - key: MAIN_MANAGER_URL
+        sync: false
+      - key: PARENT_PORTAL_SECRET
+        sync: false
+      - key: INVITE_VALID_DAYS
+        value: 7
+      - key: COURSE_GRACE_DAYS
+        value: 7
+      - key: CREDENTIAL_PURGE_DAYS
+        value: 30
+      - key: MAX_PROOF_BYTES
+        value: 5242880
+    disk:
+      name: parent-portal-data
+      mountPath: /var/data
+      sizeGB: 1

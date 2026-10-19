@@ -1,0 +1,92 @@
+[
+  {
+    "path": "Aacharya-Chemistry-Lab/.gitignore",
+    "bytes": 40,
+    "sha256": "90b6983d506c2e800cd6bfd3ed4c6af5388736b071d573ef43980f3d984cf707"
+  },
+  {
+    "path": "Aacharya-Chemistry-Lab/.openai/hosting.json",
+    "bytes": 92,
+    "sha256": "39e88313584c2f6a923fce67df10f11f9e105e76f017785fbc68298ab3f7875b"
+  },
+  {
+    "path": "Aacharya-Chemistry-Lab/README.md",
+    "bytes": 2162,
+    "sha256": "21446a50d3b4178e0b0a0e9f53719e78d83464cea1cc25291fac9dc61516830e"
+  },
+  {
+    "path": "Aacharya-Chemistry-Lab/VALIDATION.md",
+    "bytes": 1639,
+    "sha256": "2edf168734f8c4527af90e780b1ad6f34bec62ecff22d8d4cbf19a1b6337666a"
+  },
+  {
+    "path": "Aacharya-Chemistry-Lab/package-lock.json",
+    "bytes": 18862,
+    "sha256": "110776a96bfc4020bec97b0997269ae2fdd3691e3c01e93c530c3175cea0446c"
+  },
+  {
+    "path": "Aacharya-Chemistry-Lab/package.json",
+    "bytes": 282,
+    "sha256": "ce6472e98f869382c7a77d1dc25404582cf4a58ea72a4162cd3e7f606fac3d34"
+  },
+  {
+    "path": "Aacharya-Chemistry-Lab/public/app.js",
+    "bytes": 16784,
+    "sha256": "6a09e8f637dd8885dd47af372b4125831b897faa1cc6c1bebe460fc22cd518c0"
+  },
+  {
+    "path": "Aacharya-Chemistry-Lab/public/bank.js",
+    "bytes": 35556,
+    "sha256": "09831d01d1d9f9004df45944727b6c14edf1feb922b0190867ff85e918b14dec"
+  },
+  {
+    "path": "Aacharya-Chemistry-Lab/public/core.js",
+    "bytes": 3541,
+    "sha256": "44b67609ee7f9b21e831798101e147439a2ea77ca655200381d8d6f0c26aca3b"
+  },
+  {
+    "path": "Aacharya-Chemistry-Lab/public/favicon.svg",
+    "bytes": 272,
+    "sha256": "b7fb2746f1fbba65ae91b2cc93d5294d27f81b4d8c3d427f4e32a178d63ae36c"
+  },
+  {
+    "path": "Aacharya-Chemistry-Lab/public/index.html",
+    "bytes": 4964,
+    "sha256": "50b26c06039c8bba54163cb0dc7433d115d2c73704a01093dc6127062dc42995"
+  },
+  {
+    "path": "Aacharya-Chemistry-Lab/public/robots.txt",
+    "bytes": 26,
+    "sha256": "331ea9090db0c9f6f597bd9840fd5b171830f6e0b3ba1cb24dfa91f0c95aedc1"
+  },
+  {
+    "path": "Aacharya-Chemistry-Lab/public/style.css",
+    "bytes": 21182,
+    "sha256": "2d2fa55f1e81df1a2dc43b05e66a19387b5c26faa0fa6430425f5c0ae3f3696b"
+  },
+  {
+    "path": "Aacharya-Chemistry-Lab/scripts/build.js",
+    "bytes": 218,
+    "sha256": "eca686efa555af77a66306fa822e6f2120d8c4e7d9381354e7c063645432f23f"
+  },
+  {
+    "path": "Aacharya-Chemistry-Lab/server.js",
+    "bytes": 832,
+    "sha256": "6cf87ba156e21aed478bcc5ac0de8d648a5c518e2c72562df48180995a9ad7c9"
+  },
+  {
+    "path": "Aacharya-Chemistry-Lab/tests/browser.cjs",
+    "bytes": 6604,
+    "sha256": "9e4f1acb35cfd6710083e5e2b25942d25fc9d7fd32742b5c83d48c9a3c7bd733"
+  },
+  {
+    "path": "Aacharya-Chemistry-Lab/tests/core.test.js",
+    "bytes": 4108,
+    "sha256": "6f27ab623f61e911e968948f5927dc959566b9283c3d3b9f7b439a6921e624c3"
+  },
+  {
+    "path": "Aacharya-Chemistry-Lab/tests/ui.test.js",
+    "bytes": 5677,
+    "sha256": "ca07d061e7c27716f51a00e0b333654d0b0b02cc97980c4cab0eeaceb197ceb0"
+  }
+]

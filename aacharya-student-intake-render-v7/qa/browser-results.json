@@ -1,0 +1,42 @@
+{
+  "passed": true,
+  "checks": 99,
+  "viewports": [
+    320,
+    375,
+    390,
+    430,
+    768,
+    1024,
+    1366,
+    1920
+  ],
+  "navigation": [
+    "Navigation students",
+    "Navigation alumni",
+    "Navigation teachers",
+    "Navigation subjects",
+    "Navigation batches",
+    "Navigation classes",
+    "Navigation attendance",
+    "Navigation fees",
+    "Navigation payments",
+    "Navigation payment-history",
+    "Navigation admissions",
+    "Navigation parents",
+    "Navigation proofs",
+    "Navigation enrollments",
+    "Navigation renewals",
+    "Navigation tests",
+    "Navigation assignments",
+    "Navigation announcements",
+    "Navigation notifications",
+    "Navigation timesheets",
+    "Navigation reports",
+    "Navigation safety",
+    "Navigation settings",
+    "Navigation users",
+    "Navigation import"
+  ],
+  "errors": []
+}
